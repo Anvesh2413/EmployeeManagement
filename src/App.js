@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Dashboard from './components/employee/Dashboard';
 import EmployeeItem from './components/employee/EmployeeItem';
