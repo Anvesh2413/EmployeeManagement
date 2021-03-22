@@ -59,13 +59,19 @@ export default function Login() {
                         <form onSubmit={(e) => varifyUser(e)}>
                            <div className="form-group">
                               <label>User Name</label>
-                              <input name="username" type="text" onChange={(e) => setUsername(e.target.value)} className="form-control" placeholder="User Name" autoComplete="off" required/>
+                              <input name="username" type="text" onChange={(e) => setUsername(e.target.value)} className="form-control" placeholder="User Name" autoComplete="off" />
                            </div>
                            <div className="form-group">
                               <label>Password</label>
-                              <input name="password" type="password" onChange={(e) => setPassword(e.target.value)} className="form-control" placeholder="Password" required/>
+                              <input name="password" type="password" onChange={(e) => setPassword(e.target.value)} className="form-control" placeholder="Password" />
                            </div>
                            <button type="submit" className="btn btn-block btn-black">Login</button>
+                           <button type="submit" className="btn btn-block btn-black" onClick={(e)=>{setUsername('Shrivastava_av');
+                        
+                        setPassword('Anvesh@1234');
+
+                        
+                        }}>Company Single Sign-on </button>
                            {/* <Link to='/signup'>  <button type="submit" className="btn btn-block btn-secondary">Register</button></Link> */}
                         </form>
                      </div>
